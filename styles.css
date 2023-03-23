@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(rose-petals.svg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.LoginHeader{
+    border-bottom:2px solid #ff163d;
+    padding: 20px;
+}
+.form-div{
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.267);
+    padding: 30px;
+    border-radius: 20px;
+}
+input[type="text"],input[type="email"],input[type="password"]{
+    background-color: rgba(255, 0, 93, 0.382);
+    color: white;
+    border: none;
+    padding: 10px;
+}
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder{
+    color: white;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus{
+    outline:none;
+    background-color:rgba(255, 0, 93, 0.767) ;
+    color: white;
+}
+.submit{
+    color: white;
+    border: none;
+    border-radius: 13px;
+    padding: 10px;
+    background-image: linear-gradient(180deg,#ff163d,#ff6780);
+    transition: background-image,0.4s;
+}
+.submit:hover{
+    background-image: linear-gradient(90deg,#ff6780,#ff163d);
+}
+
+.icon-red{
+    color: #ff163d;
+}
+
+.author {
+    color: rgba(255, 0, 93, 0.767);
+    top: 562px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 180px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 5px;
+}
+.email{
+    width: 200px;
+    border: none;
+    background-image: linear-gradient(90deg,red,blue);
+}
+.email:hover{
+    background-image: linear-gradient(140deg,blue,red);
+}
+.register:link,
+.register:visited{
+    left: 60%;
+    top: 470px;
+    text-decoration: none;
+    color: aliceblue;
+    transition: padding-bottom,0.3s;
+}
+.register:active,
+.register:hover{
+    border-bottom: 1px solid rgb(255, 180, 180);
+    padding-bottom: 5px;
+}
