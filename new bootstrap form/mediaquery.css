@@ -1,0 +1,76 @@
+
+@media only screen and (max-width:1380px){
+    svg{
+        width: 200px;
+        height: 200px;
+        top: 22%;
+    }
+    h1{
+        font-size: 400%;
+    }
+}
+@media only screen and (max-width:1200px){
+    svg{
+        width: 180px;
+        height: 180px;
+        top: 25%;
+    }
+    h1{
+        font-size: 350%;
+    }
+}
+@media only screen and (max-width:800px){
+    .section-table{
+        width: 85%;
+        margin: auto;
+    }
+    .table th{
+        display: none;
+    }
+    .table,.table tbody,.table tr,.table td{
+        display: block;
+        width: 100%;
+    }
+    .table tbody tr{
+        margin-bottom: 50px;
+    }
+    .table tbody tr td{
+        text-align: right;
+        padding-left: 50%;
+        position:relative;
+    }
+    .table td::before{
+        content: attr(data-label);
+        text-align: left;
+        position: absolute;
+        left: 0;
+        width: 50%;
+        font-weight: bold;
+    }
+    .edit,.delete{
+        width: 100px;
+        padding: 3px;
+    }
+}
+@media only screen and (max-width:770px){
+    .skills-row{
+        margin-top: 15px;
+    }
+    .form-div{
+        margin-left: 0;
+    }
+    h1,svg{
+        display: none;
+    }
+}
+@media only screen and (max-width:600px){
+    .form-div{
+        margin-left: 0;
+    }
+    .skills-row{
+        margin-top: 15px;
+    }
+    h1,svg{
+        display: none;
+    }
+}

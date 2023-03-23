@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1,svg{
+    position: absolute;
+    color: white;
+}
+h1{
+    font-size: 450%;
+    top: 48%;
+    left: 3%;
+}
+svg{
+    width: 240px;
+    height: 240px;
+    top: 17%;
+    left: 7%;
+}
+html,body{
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+    text-rendering: optimizeLegibility;
+}
+body{
+    background-image: url(rose-petals.png);
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+    height: 100%;
+    
+}
+.form-div{
+    background-color: rgb(255, 255, 255);
+    margin-top: 6%;
+    margin-left: 20%;
+    margin-bottom: 4%;
+    padding: 15px;
+    padding-top: 50px;
+    border-top-left-radius: 130px;
+    border-bottom-left-radius: 130px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 2px 2px 6px 2px grey;
+}
+input,select{
+    opacity: 80%;
+    border: none;
+    background-color: #f1637b;
+    border-radius: 10px;
+    padding: 5px;
+    color: white;
+}
+input:focus,
+select:focus{
+    outline: none;
+}
+input::placeholder{
+    color: white;
+}
+label{
+    font-weight: 500;
+}
+input[type="radio"]{
+    -webkit-appearance: none;
+    appearance: none;
+    border: 2px solid #ff3658;
+    position: relative;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    top:3px;
+    left: 2px;
+}
+input[type="checkbox"]{
+    position: relative;
+    top: 1.5px;
+    right: 2px;
+}
+input[type="radio"]:checked{
+    background-color: #9c001a;
+}
+.radio-lab{
+    background-color: #ff3658;
+    opacity: 80%;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    box-shadow: 2px 2px 2px grey;
+    color: white;
+
+}
+/*--------------------------edit and delete button-------------------*/
+.edit,.delete{
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    background-image: linear-gradient(180deg,#ff163d,#ff6780);
+    transition: background-image,0.4s;
+}
+.edit:hover,.delete:hover{
+    background-image: linear-gradient(180deg,#ff6780,#ff163d);
+}
+/*-----------------table---------------*/
+h2{
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+th,td{
+    color: white;
+}
+
+.login:link,
+.login:visited{
+    left: 60%;
+    top: 470px;
+    text-decoration: none;
+    color: #9c001a;
+    transition: border,border-radius,padding,0.3s;
+}
+.login:active,
+.login:hover{
+    border: 1px solid #9c001a;
+    border-radius: 10px;
+    padding: 5px;
+}
